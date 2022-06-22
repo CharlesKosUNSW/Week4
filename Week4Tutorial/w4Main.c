@@ -14,7 +14,7 @@ void q1(void);
 
 int main(void) {
 
-	//q1();
+	q1();
 
 	return 0;
 }
