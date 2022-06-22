@@ -12,18 +12,18 @@
 
 #define MAX_INPUT 45
 
-long long factorial(long long number);
+long long factorial(int number);
 
 void q1(void) {
 
 	// Define variables
 	// Which one should we use? Int or long long? What's the difference?
 	//int input = 0;
-	long long input = 0;
+	int input = 0;
 
 
 	//Get user input
-	printf("Enter a number: ");
+	printf("Enter a number less than %d: ", MAX_INPUT);
 	
 	//Error checking
 	//What if order is swapped around for the logic conditions?
@@ -32,13 +32,16 @@ void q1(void) {
 	if((scanf("%d", &input)) && input >= 0 && input < MAX_INPUT) {
 		//If we're here, everything is okay
 
-		printf("%lld factorial is %lld", input, factorial(input));
+		printf("%d factorial is %lld\n", input, factorial(input));
+
+		// return EXIT_SUCCESS; //include this if in main function
 
 	} else {
 		//Something went wrong if we're here
 
-		printf("Incorrect input");
-		return;
+		printf("Incorrect input\n");
+		
+		// return EXIT_FAILURE; //include this if in main function
 	}
 
 	////Clearer way (for students) of error checking 
@@ -47,12 +50,25 @@ void q1(void) {
 
 	//int inputFlag = 0;
 	//if(inputFlag == 0) {
-	//	printf("Incorrect input");
+	//	printf("Incorrect input\n");
 	//	return;
 	//}
 
 }
 
-long long factorial(long long number) {
+// Function for calculating factorials
+// Note that factorials can get very large, can't handle numbers larger than 44
+long long factorial(int number) {
 	
+	long long result = 1;
+
+	int i = 1;
+	while (i <= number) {
+
+		result = result * i;
+
+		i++;
+	}
+
+	return result;
 }
