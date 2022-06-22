@@ -129,6 +129,8 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Q1.c" />
+    <ClCompile Include="Q11.c" />
+    <ClCompile Include="Q17.c" />
     <ClCompile Include="Q2.c" />
     <ClCompile Include="Q8.c" />
     <ClCompile Include="w4Main.c" />

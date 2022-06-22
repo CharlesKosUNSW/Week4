@@ -1,7 +1,6 @@
 // Charles Kos
 // 22.06.2022
 // z5160675@unsw.edu.au
-//Function that finds the factorial of a given integer
 
 // STUDENTS IGNORE THIS (it lets Visual Studio run scanf() without an error)
 #ifdef _MSC_VER

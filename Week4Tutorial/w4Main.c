@@ -12,12 +12,17 @@
 
 void q1(void);
 void q2(void);
+void q8(void);
+void q11(void);
+void q17(void);
 
 int main(void) {
 
 	//q1();
 	//q2();
-	q8();
+	//q8();
+	//q11();
+	q17();
 
 	return 0;
 }

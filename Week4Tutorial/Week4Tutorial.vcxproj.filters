@@ -27,5 +27,11 @@
     <ClCompile Include="Q8.c">
       <Filter>Resource Files</Filter>
     </ClCompile>
+    <ClCompile Include="Q11.c">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Q17.c">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
